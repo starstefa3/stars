@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <title>Manastirea Cobia</title>
+</head>
+
+<body>
+
+    <nav style="z-index:2; " class="navbar navbar-expand-lg  navbar-light">
+        <div class="container-fluid">
+            <a style="font-size: 30px; " class="navbar-brand">Manastirea Cobia</a>
+            <button style="border:0px;" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class=" collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul style="font-size:25px;" class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#istoric">Istoric</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Imagini</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=""> Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="head">
+        <div class="head">
+        </div>
+        <center>
+            <div class="text4">
+                <p>Manastirea <span class="twoword">Cobia</span></p>
+            </div>
+        </center>
+        </div>
+        <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+            <div class="cont"><img class="upper" src="images/523835.png"> </div>
+        </button>
+    </section>
+    <section class="middle">
+        <div class="all">
+            <p class="text8">Istoric</p>
+            <div class="text5">
+
+            <img class="door" src="images/image4.jpg">
+                <div class="alltext"><p class="text6"><span class="text7">Mănăstirea Cobia este unul dintre cele mai cunoscute așezăminte
+                        religioase de pe cuprinsul
+                        județului Dâmbovița.</span><br><br>Mănăstirea poartă hramul Sfantul Ierarh Nicolae și a fost
+                    construită între anii
+                    1571-1572 de Badea
+                    Boloşin Stolnicul, sub domnia lui Io Alexandru Voievod.</p>
+                    <button class="more">Mai Mult</button></div>
+            </div>
+        </div>
+    </section>
+</body>
+<script>//Get the button
+    let mybutton = document.getElementById("btn-back-to-top");
+
+    window.onscroll = function () {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        if (
+            document.body.scrollTop > 300 ||
+            document.documentElement.scrollTop > 300
+        ) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+    mybutton.addEventListener("click", backToTop);
+
+    function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+
+
+</html>
